@@ -96,7 +96,7 @@ def generate_balanced_dataset(filename):
 
     with open(filename, "w", newline="") as file:
         writer = csv.writer(file)
-        writer.writerow(["x", "y", "sin_θ", "cos_θ", "u1", "u2"])
+        writer.writerow(["x", "y", "cos_θ", "sin_θ", "u1", "u2"])
         writer.writerows(data)
 
     print(f"Dataset saved in {filename}")
